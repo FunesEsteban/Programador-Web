@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 HECHO</title>
+</head>
+<body>
+    <div class="contenedor" >
+        <div class="cuadrado rojo" onclick="cambiarFondo('lightskyblue')" ></div>
+        <div class="cuadrado verde" onclick="cambiarFondo('lightgray')"></div>
+        <div class="cuadrado azul" onclick="cambiarFondo('lightskyblue')"></div>
+    </div>
+    <style>
+    .contenedor {
+        display:flex;
+    }
+
+    .cuadrado {
+        height: 100px;
+        width: 100px;
+    }
+
+    .rojo {
+        background-color: lightskyblue;
+    }
+
+    .verde {
+        background-color: lightgray;
+    }
+
+    .azul {
+        background-color: lightskyblue;
+    }
+    </style>
+    ><script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color;
+        }
+        </script>
+</body>
+</html>
